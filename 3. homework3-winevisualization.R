@@ -1,6 +1,6 @@
 library('corrplot')
 getwd()
-setwd("D:/Study/¿ÆÑĞ/Homework/3")
+setwd("D:/Study/Â¿Ã†Ã‘Ã/Homework/3")
 # load data
 wine_data <- read.csv('./winequality.csv')
 
