@@ -1,14 +1,18 @@
 # import libraries
+'''
+pip install seaborn
+pip install sklearn
+'''
 import numpy as np
 import pandas as pd 
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 # load the data
-titanic_train = pd.read_csv('/Users/chentianyi/Desktop/DS and Big data Ana Project(20201024)/hwk/w1/data/train_data.csv')
+titanic_train = pd.read_csv('tmp/train_data.csv')
 titanic_train = titanic_train.drop('Unnamed: 0',axis=1)
 
-titanic_test = pd.read_csv('/Users/chentianyi/Desktop/DS and Big data Ana Project(20201024)/hwk/w1/data/test_data.csv')
+titanic_test = pd.read_csv('tmp/test_data.csv')
 titanic_test = titanic_test.drop('Unnamed: 0',axis=1)
 
 titanic = pd.concat([titanic_train,titanic_test])
@@ -78,7 +82,8 @@ from sklearn.metrics import confusion_matrix,roc_curve,auc,precision_recall_curv
 from sklearn.model_selection import learning_curve
 import matplotlib.pyplot as plt
 
-def plot_LR_ROC(x_test,y_test):#绘制ROC和AUC，来判断模型的好坏
+#plot the auc/roc curve to evaluate the performance of Logistic Regression
+def plot_LR_ROC(x_test,y_test):
     y_pro=model[0].predict(X_test)
     false_positive_rate,recall,thresholds=roc_curve(y_test,y_pro)
     roc_auc=auc(false_positive_rate,recall)
@@ -88,13 +93,14 @@ def plot_LR_ROC(x_test,y_test):#绘制ROC和AUC，来判断模型的好坏
     plt.legend(loc=10,frameon=False)
     plt.plot([0,1],[0,1],'darkgrey')
     plt.fill_between(false_positive_rate,recall,color='lightgrey',alpha=0.5)
-    plt.xlim([0.0,1.0]) # 设置x坐标轴范围
-    plt.ylim([0.0,1.0]) # 设置y坐标轴范围
+    plt.xlim([0.0,1.0]) # Set the range for x ticks
+    plt.ylim([0.0,1.0]) # Set the range for y ticks
     plt.ylabel('Sensitivity')
     plt.xlabel('Specificity')
     plt.show()
 
-def plot_RF_ROC(x_test,y_test):#绘制ROC和AUC，来判断模型的好坏
+#plot the auc/roc curve for evaluation of Random Forest
+def plot_RF_ROC(x_test,y_test):
     y_pro=model[6].predict(X_test)
     false_positive_rate,recall,thresholds=roc_curve(y_test,y_pro)
     roc_auc=auc(false_positive_rate,recall)
