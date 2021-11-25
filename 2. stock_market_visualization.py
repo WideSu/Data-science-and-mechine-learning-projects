@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 import warnings
 import matplotlib.dates as mdates
 
-SH_df = pd.read_csv('/Users/yinxiangyang/Desktop/000001.csv')
-Iflytek_df = pd.read_csv('/Users/yinxiangyang/Desktop/002030.csv')
-VisualChina_df = pd.read_csv('/Users/yinxiangyang/Desktop/000681.csv')
-Moutai_df = pd.read_csv('/Users/yinxiangyang/Desktop/600519.csv')
-CITIC_df = pd.read_csv('/Users/yinxiangyang/Desktop/600300.csv')
+SH_df = pd.read_csv('/000001.csv')
+Iflytek_df = pd.read_csv('/002030.csv')
+VisualChina_df = pd.read_csv('/000681.csv')
+Moutai_df = pd.read_csv('/600519.csv')
+CITIC_df = pd.read_csv('/600300.csv')
 
 
 df_dict = {"SH": SH_df, "Iflytek": Iflytek_df, "VisualChina": VisualChina_df, "Moutai": Moutai_df, "CITIC": CITIC_df}
