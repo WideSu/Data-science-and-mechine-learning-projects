@@ -8,7 +8,8 @@ They are projects I did with my friends in university for a data science and mac
 5. Use Topic Modeling and sentiment analysis to compare different factors to influence the incoming in China and America.
 ## Titanic Analysis: who will survive?
 We want to classify the passengers into survive and dead ones according to some characteristics. Here we utilitied two classification ML algorithms, namely logistic regression and random forest. The general process of this project is as follows:
-![image](https://user-images.githubusercontent.com/44923423/143424730-da552033-28e2-471d-923a-f64a8e33e2a5.png)
+![image](https://user-images.githubusercontent.com/44923423/143433848-d7494e7c-a480-47fc-ba25-9be2b608b386.png)
+
 The result of Random forest and Logistic Regression is show below. You can see logistic regression performs better since it has a higher 
 ### How to set the thresholds for logistic regression?
 ![image](https://user-images.githubusercontent.com/44923423/143433572-d2dbb50b-616c-47fa-a661-91ccd872de69.png)
