@@ -14,7 +14,8 @@ The result of Random forest and Logistic Regression is show below. You can see l
 ### How to set the thresholds for logistic regression?
 You can change the threshhold to get the maxium AUC score. For example:
 ![image](https://user-images.githubusercontent.com/44923423/143433572-d2dbb50b-616c-47fa-a661-91ccd872de69.png)
-![image](https://user-images.githubusercontent.com/44923423/143433615-85ec6b9e-97a3-4c64-b51e-9bb4aa021354.png)
+![image](https://user-images.githubusercontent.com/44923423/143434421-f9ecbb07-9044-41a3-86d2-526b5744130c.png)
+
 ## Language:
 Julia, R, Python
 ## Data source:
