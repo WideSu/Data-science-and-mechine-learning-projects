@@ -15,8 +15,12 @@ The result of Random forest and Logistic Regression is show below. You can see l
 You can change the threshhold to get the maxium AUC score. For example:
 ![image](https://user-images.githubusercontent.com/44923423/143433572-d2dbb50b-616c-47fa-a661-91ccd872de69.png)
 ![image](https://user-images.githubusercontent.com/44923423/143434421-f9ecbb07-9044-41a3-86d2-526b5744130c.png)
+## Stock data visualization: which stock is better?
+
+## Test Translation: LSTM application
+## Text Modeling: What is affecting how much people earn in China and US?
 
 ## Language:
-Julia, R, Python
+R, Python
 ## Data source:
 Kaggle or Tushare API
