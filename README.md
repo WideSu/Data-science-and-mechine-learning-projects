@@ -1,5 +1,5 @@
 # Data Analyse Projects on Kaggle Datasets
-They are projects I did for a data science and machine learning course.
+They are projects I did with my friends in university for a data science and machine learning course.
 ## Including:
 1. Use random forest to predict the live or dead for the passengers in the [Titanic dataset](https://www.kaggle.com/brendan45774/test-file). And use [AUC/ROC curve](https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/) to evaluate the result.
 2. Use seaborn to visualize the data for stocks
