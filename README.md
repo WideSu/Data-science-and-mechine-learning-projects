@@ -30,7 +30,9 @@ So, basically, there are three main steps. <br>
 3. Find out some clues for companies’ success<br>
 ![image](| width=100)
 <img src="https://user-images.githubusercontent.com/44923423/143515359-641eaa10-85d7-454a-983a-f74a8eeeea1a.png" alt="proccess" width="500">
+
 ### Some insights we got from these data
+
 ![image](https://user-images.githubusercontent.com/44923423/143515462-c0e2e6c7-b786-418b-962d-f9093d7f3d30.png)
 ![image](https://user-images.githubusercontent.com/44923423/143515528-e83420b4-5092-4be2-9fca-29c4afdeeb5f.png)
 ![image](https://user-images.githubusercontent.com/44923423/143515604-83e34395-da1b-48b5-a2bb-8cf1dfd0ea77.png)
