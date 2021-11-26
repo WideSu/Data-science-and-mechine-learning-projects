@@ -20,8 +20,10 @@ You can change the threshhold to get the maxium AUC score. For example:
 <p align="center">
      <img src="https://user-images.githubusercontent.com/44923423/143433572-d2dbb50b-616c-47fa-a661-91ccd872de69.png" 
      alt="proccess" 
-     width="500">
-     <img src="https://user-images.githubusercontent.com/44923423/143434421-f9ecbb07-9044-41a3-86d2-526b5744130c.png" 
+     width="500"> 
+</p>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/44923423/143434421-f9ecbb07-9044-41a3-86d2-526b5744130c.png" 
      alt="proccess" 
      width="500">
 </p>
