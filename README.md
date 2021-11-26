@@ -81,8 +81,8 @@ R, Python
 <p align="center">
       <img src="https://user-images.githubusercontent.com/44923423/143517750-1f2872ed-724e-4871-9c27-70dcd69b08ea.png" 
      alt="proccess" 
-     width="500">
+     width="300">
 </p>
 
 ## Data source:
-Kaggle or Tushare API
+Kaggle or [Tushare](https://tushare.pro/) API
