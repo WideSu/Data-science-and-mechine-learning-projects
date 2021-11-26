@@ -42,7 +42,7 @@ We use the comments on glassdoor as well as tweets to get what people think abou
 <p align="center">
      <img src="https://user-images.githubusercontent.com/44923423/143515120-ec236f41-8013-4f7f-bbe4-6b528648bc80.png" 
      alt="proccess" 
-     width="500">
+     width="300">
 </p>
 So, basically, there are three main steps. <br>
 1. Use topic modeling to find out what they are talking about on tweets<br>
