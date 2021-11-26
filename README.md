@@ -53,6 +53,7 @@ So, basically, there are three main steps. <br>
      alt="proccess" 
      width="500">
 </p>
+
 ### Some insights we got from these data
 <p align="center">
      <img src="https://user-images.githubusercontent.com/44923423/143515462-c0e2e6c7-b786-418b-962d-f9093d7f3d30.png" 
