@@ -54,12 +54,20 @@ So, basically, there are three main steps. <br>
      width="500">
 </p>
 ### Some insights we got from these data
-
-![image](https://user-images.githubusercontent.com/44923423/143515462-c0e2e6c7-b786-418b-962d-f9093d7f3d30.png)
-![image](https://user-images.githubusercontent.com/44923423/143515528-e83420b4-5092-4be2-9fca-29c4afdeeb5f.png)
-![image](https://user-images.githubusercontent.com/44923423/143515604-83e34395-da1b-48b5-a2bb-8cf1dfd0ea77.png)
-![image](https://user-images.githubusercontent.com/44923423/143515634-d43cc5a3-eb40-4945-bd47-fd5038fd854f.png)
-
+<p align="center">
+     <img src="https://user-images.githubusercontent.com/44923423/143515462-c0e2e6c7-b786-418b-962d-f9093d7f3d30.png" 
+     alt="proccess" 
+     width="500">
+     <img src="https://user-images.githubusercontent.com/44923423/143515528-e83420b4-5092-4be2-9fca-29c4afdeeb5f.png" 
+     alt="proccess" 
+     width="500">
+     <img src="https://user-images.githubusercontent.com/44923423/143515604-83e34395-da1b-48b5-a2bb-8cf1dfd0ea77.png" 
+     alt="proccess" 
+     width="500">
+     <img src="https://user-images.githubusercontent.com/44923423/143515634-d43cc5a3-eb40-4945-bd47-fd5038fd854f.png" 
+     alt="proccess" 
+     width="500">
+</p>
 
 The result for this analysis:
 ![image](https://user-images.githubusercontent.com/44923423/143515415-56c8d95b-fd80-411a-bb3c-b43228dbe081.png)
