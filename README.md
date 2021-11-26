@@ -70,8 +70,11 @@ So, basically, there are three main steps. <br>
 </p>
 
 The result for this analysis:
-![image](https://user-images.githubusercontent.com/44923423/143515415-56c8d95b-fd80-411a-bb3c-b43228dbe081.png)
-
+<p align="center">
+      <img src="https://user-images.githubusercontent.com/44923423/143515415-56c8d95b-fd80-411a-bb3c-b43228dbe081.png" 
+     alt="proccess" 
+     width="500">
+</p>
 ## Language:
 R, Python
 ## Data source:
