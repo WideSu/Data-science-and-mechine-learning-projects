@@ -8,13 +8,23 @@ They are projects I did with my friends in university for a data science and mac
 5. Use sentiment analysis to analyze people's comments for tech gaints.
 ## 1.Titanic Analysis: who will survive?
 We want to classify the passengers into survive and dead ones according to some characteristics. Here we utilitied two classification ML algorithms, namely logistic regression and random forest. The general process of this project is as follows:
-![image](https://user-images.githubusercontent.com/44923423/143433848-d7494e7c-a480-47fc-ba25-9be2b608b386.png)
+<p align="center">
+     <img src="https://user-images.githubusercontent.com/44923423/143433848-d7494e7c-a480-47fc-ba25-9be2b608b386.png" 
+     alt="proccess" 
+     width="500">
+</p>
 
 The result of Random forest and Logistic Regression is show below. You can see logistic regression performs better since it has a higher AUC score.
 ### How to set the thresholds for logistic regression?
 You can change the threshhold to get the maxium AUC score. For example:
-![image](https://user-images.githubusercontent.com/44923423/143433572-d2dbb50b-616c-47fa-a661-91ccd872de69.png)
-![image](https://user-images.githubusercontent.com/44923423/143434421-f9ecbb07-9044-41a3-86d2-526b5744130c.png)
+<p align="center">
+     <img src="https://user-images.githubusercontent.com/44923423/143433572-d2dbb50b-616c-47fa-a661-91ccd872de69.png" 
+     alt="proccess" 
+     width="500">
+     <img src="https://user-images.githubusercontent.com/44923423/143434421-f9ecbb07-9044-41a3-86d2-526b5744130c.png" 
+     alt="proccess" 
+     width="500">
+</p>
 ## 2.Stock data visualization: which stock is better?
 ![image](https://user-images.githubusercontent.com/44923423/143514215-82c792d9-bde3-4f1d-976c-bdfbde92378e.png)
 ## 3.Text Translation: seq2seq model
