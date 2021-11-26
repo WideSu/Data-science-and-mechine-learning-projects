@@ -28,8 +28,7 @@ So, basically, there are three main steps. <br>
 1. Use topic modeling to find out what they are talking about on tweets<br>
 2. Use sentiment analysis to identify the positive or negative sentiment of comments <br>
 3. Find out some clues for companies’ success<br>
-![image](| width=100)
-<img src="https://user-images.githubusercontent.com/44923423/143515359-641eaa10-85d7-454a-983a-f74a8eeeea1a.png" alt="proccess" width="500">
+<img src="https://user-images.githubusercontent.com/44923423/143515359-641eaa10-85d7-454a-983a-f74a8eeeea1a.png" alt="proccess" width="500" lass="center">
 
 ### Some insights we got from these data
 
