@@ -11,7 +11,7 @@ We want to classify the passengers into survive and dead ones according to some 
 <p align="center">
      <img src="https://user-images.githubusercontent.com/44923423/143433848-d7494e7c-a480-47fc-ba25-9be2b608b386.png" 
      alt="proccess" 
-     width="500">
+     width="600">
 </p>
 
 The result of Random forest and Logistic Regression is show below. You can see logistic regression performs better since it has a higher AUC score.
@@ -29,7 +29,11 @@ You can change the threshhold to get the maxium AUC score. For example:
 </p>
 
 ## 2.Stock data visualization: which stock is better?
-![image](https://user-images.githubusercontent.com/44923423/143514215-82c792d9-bde3-4f1d-976c-bdfbde92378e.png)
+<p align="center">
+     <img src="https://user-images.githubusercontent.com/44923423/143514215-82c792d9-bde3-4f1d-976c-bdfbde92378e.png" 
+     alt="proccess" 
+     width="600"> 
+</p>
 ## 3.Text Translation: seq2seq model
 We get the dataset which contains more than 20,000 parallel sentences of English and Chinese from [manythings](http://www.manythings.org/anki/) and trained a bilingual model which can translate English into Chinese.
 
