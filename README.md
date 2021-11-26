@@ -23,6 +23,7 @@ We get the dataset which contains more than 20,000 parallel sentences of English
 ## 4.Use sentiment analysis to analyze people's comments for tech gaints.
 We use the comments on glassdoor as well as tweets to get what people think about tech gaints
 ![image](https://user-images.githubusercontent.com/44923423/143515120-ec236f41-8013-4f7f-bbe4-6b528648bc80.png)
+
 So, basically, there are three main steps. <br>
 1. Use topic modeling to find out what they are talking about on tweets<br>
 2. Use sentiment analysis to identify the positive or negative sentiment of comments <br>
