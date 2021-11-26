@@ -27,6 +27,7 @@ You can change the threshhold to get the maxium AUC score. For example:
      alt="proccess" 
      width="500">
 </p>
+
 ## 2.Stock data visualization: which stock is better?
 ![image](https://user-images.githubusercontent.com/44923423/143514215-82c792d9-bde3-4f1d-976c-bdfbde92378e.png)
 ## 3.Text Translation: seq2seq model
