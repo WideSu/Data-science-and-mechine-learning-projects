@@ -22,16 +22,16 @@ We get the dataset which contains more than 20,000 parallel sentences of English
 
 ## 4.Use sentiment analysis to analyze people's comments for tech gaints.
 We use the comments on glassdoor as well as tweets to get what people think about tech gaints
-![image](https://user-images.githubusercontent.com/44923423/143515120-ec236f41-8013-4f7f-bbe4-6b528648bc80.png)
+![image](https://user-images.githubusercontent.com/44923423/143515120-ec236f41-8013-4f7f-bbe4-6b528648bc80.png| width=100)
 
 So, basically, there are three main steps. <br>
 1. Use topic modeling to find out what they are talking about on tweets<br>
 2. Use sentiment analysis to identify the positive or negative sentiment of comments <br>
 3. Find out some clues for companies’ success<br>
-![image](https://user-images.githubusercontent.com/44923423/143515359-641eaa10-85d7-454a-983a-f74a8eeeea1a.png)
+![image](https://user-images.githubusercontent.com/44923423/143515359-641eaa10-85d7-454a-983a-f74a8eeeea1a.png| width=100)
 
 ### Some insights we got from these data
-![image](https://user-images.githubusercontent.com/44923423/143515462-c0e2e6c7-b786-418b-962d-f9093d7f3d30.png)
+![image](https://user-images.githubusercontent.com/44923423/143515462-c0e2e6c7-b786-418b-962d-f9093d7f3d30.png| width=100)
 ![image](https://user-images.githubusercontent.com/44923423/143515528-e83420b4-5092-4be2-9fca-29c4afdeeb5f.png)
 ![image](https://user-images.githubusercontent.com/44923423/143515604-83e34395-da1b-48b5-a2bb-8cf1dfd0ea77.png)
 ![image](https://user-images.githubusercontent.com/44923423/143515634-d43cc5a3-eb40-4945-bd47-fd5038fd854f.png)
