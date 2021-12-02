@@ -5,7 +5,7 @@ They are projects I did with my friends in university for a data science and mac
 2. Deployed Application Programming Interface (API) and Web scrapping method to extract stock data and sales data from TuShare (Financial data platform) and eBay respectively for data visualization and presentation and used seaborn to visualize the data for stocks.
 3. Use linear regression to analyze the correlation of wine quility and the acidity, sugar, so2 percentage for the [wine quality](https://www.kaggle.com/danielpanizzo/wine-quality) dataset on Kaggle.
 4. Use Tensorflow to train a seq2seq model for text translation from English to Chinese and evaluate the model by BLUE score.The complete code is avaliable on [Colab](https://colab.research.google.com/drive/1ws4Dk6f-WULnCEbsQL-rwna9tNiUu6tH?usp=sharing)
-5. Use sentiment analysis to analyze people's comments for tech gaints.
+5. Use sentiment analysis to analyze people's comments for tech gaints from tweets and glassdoor reviews and get insights from it.
 ## 1.Titanic Analysis: who will survive?
 We want to classify the passengers into survive and dead ones according to some characteristics. Here we utilitied two classification ML algorithms, namely logistic regression and random forest. The general process of this project is as follows:
 <p align="center">
