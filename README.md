@@ -157,7 +157,7 @@ Regression analysis is used when you want to predict a continuous dependent vari
 ### What is regularized regression?
 What fitting a linear regression does is minimize a loss function to choose a coefficient ai for each feature variable. If we allow these coefficients or parameters to be super large, we can get overfitting. It isn't so easy to see in two dimensions, but when you have loads and loads of features, that is, if your data sit in a high-dimensional space with large coefficients, it gets easy to predict nearly anything. For this reason, it is common practice to alter the loss function so that it penalizes for large coefficients. This is called regularization. The first type of regularized regression that we'll look at is called regularized regression
 #### Ridge regression
-Penalise large coefficience to ovid overfitting.<br>
+The general regression uses OLS(Ordinary least squares) as the loss function, to penalise large coefficience to ovid overfitting, we can add this to OLS.<br>
 <img src="https://user-images.githubusercontent.com/44923423/144366665-cbfafa2c-56cc-4391-b9b6-96645fb2971b.png" 
      alt="ridge regression" 
      width="100">
