@@ -155,6 +155,8 @@ But actually, a better method is to use all of these data and adjust our model t
 Regression analysis is used when you want to predict a continuous dependent variable from a number of independent variables. If the dependent variable is dichotomous, then logistic regression should be used.
 ### What is regularized regression?
 What fitting a linear regression does is minimize a loss function to choose a coefficient ai for each feature variable. If we allow these coefficients or parameters to be super large, we can get overfitting. It isn't so easy to see in two dimensions, but when you have loads and loads of features, that is, if your data sit in a high-dimensional space with large coefficients, it gets easy to predict nearly anything. For this reason, it is common practice to alter the loss function so that it penalizes for large coefficients. This is called regularization. The first type of regularized regression that we'll look at is called regularized regression
+#### Ridge regression
+#### Lasso regression
 ### What’s R square?
 R square is the amount of variance between the target variable that is predicted from the feature variables.
 ### What is a small p value means?
