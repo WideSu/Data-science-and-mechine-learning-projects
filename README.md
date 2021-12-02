@@ -34,6 +34,7 @@ You can change the threshhold to get the maxium AUC score. For example:
      alt="proccess" 
      width="600"> 
 </p>
+
 ## 3.Text Translation: seq2seq model
 We get the dataset which contains more than 20,000 parallel sentences of English and Chinese from [manythings](http://www.manythings.org/anki/) and trained a bilingual model which can translate English into Chinese.
 
