@@ -1,3 +1,4 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # Data Analyse Projects on Kaggle Datasets
 They are projects I did with my friends in university for a data science and machine learning course.
 ## Table of content
@@ -157,7 +158,9 @@ Regression analysis is used when you want to predict a continuous dependent vari
 What fitting a linear regression does is minimize a loss function to choose a coefficient ai for each feature variable. If we allow these coefficients or parameters to be super large, we can get overfitting. It isn't so easy to see in two dimensions, but when you have loads and loads of features, that is, if your data sit in a high-dimensional space with large coefficients, it gets easy to predict nearly anything. For this reason, it is common practice to alter the loss function so that it penalizes for large coefficients. This is called regularization. The first type of regularized regression that we'll look at is called regularized regression
 #### Ridge regression
 Penalise large coefficience to ovid overfitting.<br>
-$alpha*$
+```math
+\alpha*\sum_{n=-\infty}^{+\infty} f(x) \\
+```
 #### Lasso regression
 ### What’s R square?
 R square is the amount of variance between the target variable that is predicted from the feature variables.
