@@ -87,3 +87,71 @@ R, Python
 
 ## Data source:
 Kaggle or [Tushare](https://tushare.pro/) API
+
+## Q&A for ML
+### Cross-validation
+#### What's cross-validation?
+Cross-validation is a vital step in evaluating a model, which can split the data abitraryly and give a more accurate test result. It divide data into folds, and each time use one fold as the test set, fit the model to the other folds. Then predict on the test fold, and compute the matrix of intrest(in sklearn the default is R square)
+#### Why use cross-validation?(motivation)
+When we evaluate the performance of the model using .score(R square). The R square depends on how we split the data. The data points in the test set may have some peculiarities that mean the R squared computed on it is not representative of the model's ability to generalize to unseen data. To combat this dependence on what is essentially an arbitrary split, we use a technique called cross-validation. This method avoids the problem of your metric of choice being dependent on the train test split.
+#### Pros and cons of cross validation?
+The advantage of cross-validation is that it maximizes the amount of data that is used to train the model, as during the course of training, the model is not only trained, but also tested on all of the available data. However, a trade-off as using more folds is more computationally expensive. This is because you are fittings and predicting more times. This method avoids the problem of your metric of choice being dependent on the train test split.
+
+#### How to use cross-validation? Can you give me an example?
+We begin by splitting the dataset into five groups or folds. Then we hold out the first fold as a test set, fit our model on the remaining four folds, predict on the test set, and compute the metric of interest. Next, we hold out the second fold as our test set, fit on the remaining data, predict on the test set, and compute the metric of interest. Then similarly with the third, fourth, and fifth fold.<br>
+![image](https://user-images.githubusercontent.com/44923423/144342213-fcd4d04c-03b0-4382-b3bb-b062213be85a.png)
+
+```Python
+# Import the necessary modules
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LinearRegression
+
+# Create a linear regression object: reg
+reg = LinearRegression()
+
+# Compute 5-fold cross-validation scores: cv_scores
+cv_scores = cross_val_score(reg, X, y, cv=5)
+
+# Print the 5-fold cross-validation scores
+print(cv_scores)
+
+print("Average 5-Fold CV Score: {}".format(np.mean(cv_scores)))
+```
+The output:
+```
+[0.81720569 0.82917058 0.90214134 0.80633989 0.94495637]
+Average 5-Fold CV Score: 0.8599627722793232
+```
+### If I give you a Machine Learning project, what will you do steep by steep? And how do you allocate your time for each step? 
+I will spend 40% of my time on the EDA. It seems a lot of time. But since EDA is fundamental for the future process, so it’s worthy to do that. Since the data may come from a very different industry, and I need to understand the background. Then try to see the distributions, see the patterns. After that can I know how should I pre-process the data, what kind of analysis should be done. 
+
+Then, the second is the data pre-processing part. I think I will spend 20% of my time on it. I will first look at the null values in the dataset and try to figure out why the value is missing. If the missing row is mainly wrong data, I will just drop it. Else, if it doesn’t matter, I may impute missing values using K-NN. Besides, I need to check the data types for each column. If it’s not correct, need to change them into the correct type. I may also need to split the data, remove duplicates or change the text into lower case. Alongside visualize the data to see the correlations and distributions.
+
+The third part is experiments, using ML models to get insights of the data. As long as we know how our data looks like and what we want to do, it will be easy to find a ML approach to handle that. So I will spend 10% of my time on it. For example, if our task is to prediction the result for new features, when our dataset mainly consists of numerical data, we can use linear regression to do prediction. If it’s categorical, we can use logistic regression for prediction. If our task is classification, we can use K-NN, decision tree, random forest, SVM, naïve bayes, or even neural network. If our task is clustering, we can use K-means, and anomaly detection. 
+
+The fourth part is try to visualize the results and explain them in a reasonable way. And report the insights to the project teams. This part can be hard sometimes as we are not familiar with the background knowledge of the industry. So I will spend 20% of my time on it. I’ve done a project about analysing stock data with students majoring in finance. They helped me a lot about understanding the indexes and the charts.
+
+The last part is packaging and deployment. Like using docker to containerize the data pipeline, designing intelligent model optimisation modules (MLflow), hosting models to scalable cloud infrastructure (AWS / GCP). It’s standard processes and I can ask seniors about that, so it’s relatively easy. I will spend 10% of my time on that.
+### Popular classification methods:
+- RF: Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time. ... For regression tasks, the mean or average prediction of the individual trees is returned.
+
+- LGB: Light GBM is a fast, distributed, high-performance gradient boosting framework based on decision tree algorithm, used for ranking, classification and many other machine learning tasks
+
+- SVM: Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers detection. The advantages of support vector machines are: Effective in high dimensional spaces. Still effective in cases where number of dimensions is greater than the number of samples.
+### How to handle imbalanced data?
+There are generally two ways to handle this. 
+
+First is resampling the datasets(under-sampling and over-sampling)
+**Under-sampling**<br>
+Under-sampling balances the dataset by reducing the size of the abundant class. This method is used when the quantity of data is sufficient. By keeping all samples in the rare class and randomly selecting an equal number of samples in the abundant class, a balanced new dataset can be retrieved for further modelling.
+**Over-sampling**<br>
+On the contrary, oversampling is used when the quantity of data is insufficient. It tries to balance the dataset by increasing the size of rare samples. Rather than getting rid of abundant samples, new rare samples are generated by using e.g. repetition, bootstrapping, or SMOTE (Synthetic Minority Over-Sampling Technique).
+Note that there is no absolute advantage of one resampling method over another. The application of these two methods depends on the use case it applies to and the dataset itself. A combination of over-and under-sampling is often successful as well.<br>
+
+Besides that, we can also adjust the ratio of the rare and abundant dataset. To conclude, those methods are all about adjusting the data. But actually, a better method is to use all of these data and adjust our model to suit the unbalanced data. We can design a cost function that is penalizing the wrong classification of the rare class more than wrong classifications of the abundant class, it is possible to design many models that naturally generalize in favour of the rare class. For example, tweaking an SVM to penalize wrong classifications of the rare class by the same ratio that this class is underrepresented.<br>
+### When can regression be used?
+Regression analysis is used when you want to predict a continuous dependent variable from a number of independent variables. If the dependent variable is dichotomous, then logistic regression should be used.
+### What’s R square?
+R square is the amount of variance between the target variable that is predicted from the feature variables.
+### What is a small p value means?
+A small p-value (typically ≤ 0.05) indicates strong evidence against the null hypothesis, so you reject the null hypothesis. A large p-value (> 0.05) indicates weak evidence against the null hypothesis, so you fail to reject the null hypothesis.
