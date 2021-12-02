@@ -159,6 +159,9 @@ What fitting a linear regression does is minimize a loss function to choose a co
 #### Ridge regression
 Penalise large coefficience to ovid overfitting.<br>
 ```math
+e^{i\pi} + 1 = 0
+```
+```math
 \alpha*\sum_{n=-\infty}^{+\infty} f(x) \\
 ```
 #### Lasso regression
