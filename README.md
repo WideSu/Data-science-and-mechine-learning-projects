@@ -160,7 +160,7 @@ What fitting a linear regression does is minimize a loss function to choose a co
 Penalise large coefficience to ovid overfitting.<br>
 <img src="https://user-images.githubusercontent.com/44923423/144366665-cbfafa2c-56cc-4391-b9b6-96645fb2971b.png" 
      alt="ridge regression" 
-     width="30">
+     width="100">
 #### Lasso regression
 ### What’s R square?
 R square is the amount of variance between the target variable that is predicted from the feature variables.
