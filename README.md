@@ -153,6 +153,8 @@ Besides that, we can also adjust the ratio of the rare and abundant dataset. To 
 But actually, a better method is to use all of these data and adjust our model to suit the unbalanced data. We can **design a cost function that is penalizing the wrong classification of the rare class more** than wrong classifications of the abundant class, it is possible to design many models that naturally generalize in favour of the rare class. For example, tweaking an SVM to penalize wrong classifications of the rare class by the same ratio that this class is underrepresented.<br>
 ### When can regression be used?
 Regression analysis is used when you want to predict a continuous dependent variable from a number of independent variables. If the dependent variable is dichotomous, then logistic regression should be used.
+### What is regularized regression?
+What fitting a linear regression does is minimize a loss function to choose a coefficient ai for each feature variable. If we allow these coefficients or parameters to be super large, we can get overfitting. It isn't so easy to see in two dimensions, but when you have loads and loads of features, that is, if your data sit in a high-dimensional space with large coefficients, it gets easy to predict nearly anything. For this reason, it is common practice to alter the loss function so that it penalizes for large coefficients. This is called regularization. The first type of regularized regression that we'll look at is called regularized regression
 ### What’s R square?
 R square is the amount of variance between the target variable that is predicted from the feature variables.
 ### What is a small p value means?
