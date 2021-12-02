@@ -161,6 +161,9 @@ Penalise large coefficience to ovid overfitting.<br>
 <img src="https://user-images.githubusercontent.com/44923423/144366665-cbfafa2c-56cc-4391-b9b6-96645fb2971b.png" 
      alt="ridge regression" 
      width="100">
+##### How to choose alpha?(hyperparameter tuning)<br>
+- A large alpha: rely heavily on large coefficience, and the model will be too simple(underfitting)
+- alpha = 0: overfitting
 #### Lasso regression
 ### What’s R square?
 R square is the amount of variance between the target variable that is predicted from the feature variables.
