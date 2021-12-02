@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # Data Analyse Projects on Kaggle Datasets
 They are projects I did with my friends in university for a data science and machine learning course.
 ## Table of content
