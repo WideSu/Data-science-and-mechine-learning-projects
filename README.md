@@ -173,6 +173,7 @@ A small p-value (typically ≤ 0.05) indicates strong evidence against the null 
 <img src="https://user-images.githubusercontent.com/44923423/146113770-d1eb1e64-b97c-46f5-803f-3f4fda67abae.png" 
      alt="ridge regression" 
      width="100">
+     
 Normalization vs. standardization is an eternal question among machine learning newcomers. Let me elaborate on the answer in this section.
 
 Normalization is good to use when you know that the distribution of your data does not follow a Gaussian distribution. This can be useful in algorithms that do not assume any distribution of the data like K-Nearest Neighbors and Neural Networks.
