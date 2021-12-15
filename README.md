@@ -169,3 +169,6 @@ The general regression uses OLS(Ordinary least squares) as the loss function, to
 R square is the amount of variance between the target variable that is predicted from the feature variables.
 ### What is a small p value means?
 A small p-value (typically ≤ 0.05) indicates strong evidence against the null hypothesis, so you reject the null hypothesis. A large p-value (> 0.05) indicates weak evidence against the null hypothesis, so you fail to reject the null hypothesis.
+### What's the difference between normalize and standarize?
+![image](https://user-images.githubusercontent.com/44923423/146113770-d1eb1e64-b97c-46f5-803f-3f4fda67abae.png)
+
