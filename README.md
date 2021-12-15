@@ -170,5 +170,11 @@ R square is the amount of variance between the target variable that is predicted
 ### What is a small p value means?
 A small p-value (typically ≤ 0.05) indicates strong evidence against the null hypothesis, so you reject the null hypothesis. A large p-value (> 0.05) indicates weak evidence against the null hypothesis, so you fail to reject the null hypothesis.
 ### What's the difference between normalize and standarize?
-![image](https://user-images.githubusercontent.com/44923423/146113770-d1eb1e64-b97c-46f5-803f-3f4fda67abae.png)
+<img src="https://user-images.githubusercontent.com/44923423/146113770-d1eb1e64-b97c-46f5-803f-3f4fda67abae.png" 
+     alt="ridge regression" 
+     width="100">
+Normalization vs. standardization is an eternal question among machine learning newcomers. Let me elaborate on the answer in this section.
 
+Normalization is good to use when you know that the distribution of your data does not follow a Gaussian distribution. This can be useful in algorithms that do not assume any distribution of the data like K-Nearest Neighbors and Neural Networks.
+Standardization, on the other hand, can be helpful in cases where the data follows a Gaussian distribution. However, this does not have to be necessarily true. Also, unlike normalization, standardization does not have a bounding range. So, even if you have outliers in your data, they will not be affected by standardization.
+However, at the end of the day, the choice of using normalization or standardization will depend on your problem and the machine learning algorithm you are using. There is no hard and fast rule to tell you when to normalize or standardize your data. You can always start by fitting your model to raw, normalized and standardized data and compare the performance for best results.
