@@ -173,9 +173,14 @@ A small p-value (typically ≤ 0.05) indicates strong evidence against the null 
 <img src="https://user-images.githubusercontent.com/44923423/146113770-d1eb1e64-b97c-46f5-803f-3f4fda67abae.png" 
      alt="ridge regression" 
      width="300">
-     
-Normalization vs. standardization is an eternal question among machine learning newcomers. Let me elaborate on the answer in this section.
+#### Normalization
+Normalization is a data transformation method that maps the data into a specific range. That transformation may affect the efficiency and the accuracy of classifiers. While some classifiers such as neural networks benefit from normalization significantly, the normalization of data may not affect some classifiers such as naive Bayesian and decision trees. Particularly, the algorithms that are using distance measures may produce reasonable results with normalization, because the distance metrics may produce meaningful values after normalization. Moreover, the normalization may improve the classification accuracy of the neural networks (NNW) since it accelerates the training stage.
 
 Normalization is good to use when you know that the distribution of your data does not follow a Gaussian distribution. This can be useful in algorithms that do not assume any distribution of the data like K-Nearest Neighbors and Neural Networks.
+
+#### Standarization
 Standardization, on the other hand, can be helpful in cases where the data follows a Gaussian distribution. However, this does not have to be necessarily true. Also, unlike normalization, standardization does not have a bounding range. So, even if you have **outliers** in your data, they will **not be affected by standardization**.
 However, at the end of the day, the choice of using normalization or standardization will depend on your problem and the machine learning algorithm you are using. Like SVM will be effected by normalization, but RF will not. There is no hard and fast rule to tell you when to normalize or standardize your data. You can always start by **fitting your model to raw, normalized and standardized data and compare the performance for best results**. 
+
+### Data Reduction using Principal Component Analysis
+In many classification problems, there exist one or more features in the dataset that do not have distinctive properties for separation. Some features may be highly correlated or completely irrelevant to the sample. That is why, data reduction techniques are offered to eliminate these useless features. PCA is one of the famous approaches to reduce the dimensionality [9]. Basically, it transforms the complete dataset into a new space of linearly uncorrelated attributes using orthogonal transformation. PCA is done by eigenvalue decomposition of a correlation matrix such that the eigenvector of the highest eigenvalue captures the largest possible information or variance about the dataset. In this manner, a subset of most informative eigenvectors (or principal components) is selected. Using this subset, the original dataset is transformed into a lower dimensional space in which every data sample is represented by a smaller feature vector.
